@@ -23,7 +23,7 @@
 
 <header>
     <h1>MIKHAIL NIKOLAEVICH</h1>
-    <div class="tagline">ИНЖЕНЕРНОЕ БЮРО | КОМАНДА 4/16</div>
+    <div class="tagline">ИНЖЕНЕРНОЕ БЮРО</div>
 </header>
 
 <div class="container">

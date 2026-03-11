@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+    <title>MN-Engineering</title>
+    <style>
+        body { font-family: sans-serif; line-height: 1.4; color: #333; margin: 0; padding: 10px; background-color: #f4f4f4; }
+        header { background: #2c3e50; color: #fff; padding: 15px 10px; text-align: center; border-radius: 5px; }
+        h1 { margin: 0; font-size: 1.5rem; }
+        .city { font-size: 0.9rem; opacity: 0.9; }
+        .content { background: #fff; padding: 15px; margin-top: 10px; border-radius: 5px; box-shadow: 0 2px 5px rgba(0,0,0,0.1); }
+        h2 { font-size: 1.1rem; color: #2c3e50; }
+        .services { list-style: none; padding: 0; }
+        .services li { background: #e8f4f8; margin-bottom: 8px; padding: 10px; border-left: 4px solid #3498db; font-size: 0.95rem; }
+        .contact { background: #34495e; color: #fff; padding: 15px; margin-top: 10px; text-align: center; border-radius: 5px; }
+        .contact p { margin: 5px 0; }
+        a { color: #fff; text-decoration: none; font-weight: bold; font-size: 1.2rem; }
+    </style>
+</head>
+<body>
+
+<header>
+    <h1>MN-Engineering</h1>
+    <div class="city">г. Усть-Каменогорск</div>
+</header>
+
+<div class="content">
+    <h2>Услуги:</h2>
+    <ul class="services">
+        <li>Проектирование систем контроля полива растений</li>
+        <li>Инженерные решения</li>
+    </ul>
+</div>
+
+<div class="contact">
+    <p>Связаться с нами:</p>
+    <a href="tel:+77056460412">+7 705 646 04 12</a>
+</div>
+
+</body>
+</html>

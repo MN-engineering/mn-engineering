@@ -1,0 +1,139 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>MN-Engineering | Усть-Каменогорск</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+    
+    <style>
+        /* ОСНОВНОЙ ФОН: Здесь задаем темный цвет всего сайта */
+        body { 
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif; 
+            background-color: #0f172a; /* Цвет фона (темно-синий) */
+            color: #f8fafc; /* Цвет обычного текста */
+            margin: 0; padding: 0; line-height: 1.6; 
+        }
+        
+        /* ШАПКА (ВЕРХ): Настройки синей полосы вверху */
+        header { 
+            background: #1e293b; 
+            padding: 40px 15px; 
+            text-align: center; 
+            border-bottom: 3px solid #3b82f6; /* Синяя линия под шапкой */
+        }
+        
+        /* ЛОГОТИП: Размер и цвет иконки микросхемы */
+        .logo-icon { 
+            font-size: 3.5rem; 
+            color: #3b82f6; /* Основной синий цвет */
+            position: relative; 
+            display: inline-block; 
+            margin-bottom: 10px; 
+        }
+        
+        /* КАПЛЯ: Настройка маленькой голубой капли в углу логотипа */
+        .logo-icon::after { 
+            content: "\f043"; font-family: "Font Awesome 5 Free"; font-weight: 900; 
+            position: absolute; font-size: 1.2rem; 
+            color: #00d4ff; /* Цвет капли (голубой) */
+            bottom: 0px; right: -10px; 
+        }
+        
+        /* НАЗВАНИЕ: Настройка шрифта MN-ENGINEERING */
+        h1 { font-size: 1.7rem; font-weight: 800; letter-spacing: 2px; margin: 0; }
+        
+        /* ПОДЗАГОЛОВОК: Текст "Проектирование систем полива" */
+        .tagline { color: #3b82f6; font-size: 0.9rem; font-weight: bold; margin-top: 5px; text-transform: uppercase; }
+
+        /* КАРТОЧКИ УСЛУГ: Белые блоки с описанием */
+        .card { 
+            background: #1e293b; 
+            padding: 20px; 
+            border-radius: 8px; 
+            border-left: 4px solid #3b82f6; /* Полоска слева у карточки */
+            margin-top: 15px;
+        }
+
+        /* ГАЛЕРЕЯ: Настройки отображения ваших фотографий */
+        .gallery-img { 
+            width: 100%; 
+            height: 220px; 
+            object-fit: cover; /* Фото обрезается ровно, не растягиваясь */
+            border-radius: 8px; 
+            border: 2px solid #334155; 
+            cursor: pointer; /* Делает курсор "пальчиком" при наведении */
+            transition: 0.3s; 
+        }
+
+        /* КНОПКА WHATSAPP: Настройка зеленого цвета и размера */
+        .btn { 
+            background: #25D366; /* Зеленый цвет WhatsApp */
+            color: white; 
+            padding: 15px 35px; 
+            border-radius: 50px; 
+            text-decoration: none; 
+            font-weight: bold; 
+            display: inline-block;
+            box-shadow: 0 4px 15px rgba(0,0,0,0.2);
+        }
+    </style>
+</head>
+<body>
+
+<header>
+    <div class="logo-box">
+        <div class="logo-icon"><i class="fas fa-microchip"></i></div>
+        <h1>MN-ENGINEERING</h1>
+    </div>
+    <div class="tagline">Проектирование систем полива</div>
+    <div style="color: #64748b; font-size: 0.8rem; margin-top: 5px;">Усть-Каменогорск</div>
+</header>
+
+<div class="container" style="max-width: 800px; margin: auto; padding: 20px;">
+        <div class="services" style="display: grid; gap: 20px;">
+        <div class="card">
+            <h3><i class="fas fa-ruler-combined" style="margin-right: 10px; color: #3b82f6;"></i> Проектирование</h3>
+            <p>Профессиональные системы контроля полива растений и автоматизация процессов.</p>
+        </div>
+        <div class="card">
+            <h3><i class="fas fa-mobile-alt" style="margin-right: 10px; color: #3b82f6;"></i> Автоматизация</h3>
+            <p>Умные контроллеры и датчики влажности для управления системой прямо со смартфона.</p>
+        </div>
+    </div>
+
+
+    <h2 style="text-align: center; color: #3b82f6; margin-top: 40px;">НАШИ ПРОЕКТЫ</h2>
+    <div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(200px, 1fr)); gap: 15px;">
+        <img src="work1.png" class="gallery-img" onclick="openModal(this.src)">
+        <img src="work2.png" class="gallery-img" onclick="openModal(this.src)">
+        <img src="work3.png" class="gallery-img" onclick="openModal(this.src)">
+    </div>
+
+    <div style="text-align: center; margin-top: 50px; padding: 30px; background: #1e3c72; border-radius: 12px;">
+        <h2 style="margin: 0; font-size: 1.2rem;">НУЖЕН РАСЧЕТ ПРОЕКТА?</h2>
+        
+        <a href="tel:+77056460412" style="display: block; color: white; font-size: 1.7rem; font-weight: bold; margin: 15px 0; text-decoration: none;">
+            +7 (705) 646-04-12
+        </a>
+
+        <a href="https://wa.me/77056460412" class="btn">
+            НАПИСАТЬ В WHATSAPP
+        </a>
+    </div>
+</div>
+
+<div id="modal" style="display: none; position: fixed; z-index: 1000; left: 0; top: 0; width: 100%; height: 100%; background: rgba(0,0,0,0.9); text-align: center; align-items: center; justify-content: center;" onclick="this.style.display='none'">
+    <img id="modal-img" style="max-width: 90%; max-height: 80%; margin-top: 5%; border: 2px solid #3b82f6;">
+</div>
+
+<script>
+    // Функция для открытия картинки на весь экран
+    function openModal(src) {
+        document.getElementById("modal").style.display = "flex";
+        document.getElementById("modal-img").src = src;
+    }
+</script>
+
+</body>
+</html>

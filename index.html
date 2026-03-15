@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <title>MN-Engineering | Автоматизация и мониторинг</title>
+  <meta name="description" content="Инженерные системы автоматизации полива, климат-контроля и мониторинга на базе ESP32">
+
+  <link rel="stylesheet" href="css/style.css">
+  <script src="js/script.js" defer></script>
+</head>
+<body>
+
+  <header class="site-header">
+    <div class="nav-container">
+      <div class="logo">MN-Engineering</div>
+
+      <button class="burger" id="burger" aria-label="Открыть меню" aria-expanded="false" aria-controls="nav-menu">
+        <span></span>
+        <span></span>
+        <span></span>
+      </button>
+
+      <nav class="nav-menu" id="nav-menu">
+        <a href="index.html">Главная</a>
+        <a href="projects.html">Проекты</a>
+        <a href="services.html">Услуги</a>
+        <a href="contact.html">Контакты</a>
+        <a class="nav-button whatsapp" href="https://wa.me/77056460412" target="_blank" rel="noopener noreferrer">
+          WhatsApp
+        </a>
+      </nav>
+    </div>
+  </header>
+
+  <main>
+    <section class="hero">
+      <div class="container">
+        <h1>Инженерные системы автоматизации</h1>
+        <p class="hero-text">
+          Проектирование и разработка систем управления, автоматического полива,
+          мониторинга параметров и климат-контроля на базе ESP32.
+        </p>
+      </div>
+    </section>
+
+    <section class="esp32-section">
+      <div class="container">
+        <h2>Контроллер ESP32 для автоматизации полива</h2>
+        <p class="section-text">
+          Компактное решение для контроля полива, температуры, влажности и
+          удалённого доступа через Wi-Fi.
+        </p>
+
+        <img
+          src="images/esp32-touchscreen.png"
+          class="feature-image zoomable"
+          alt="Контроллер ESP32 с сенсорным экраном"
+        >
+      </div>
+    </section>
+
+    <section class="projects-preview">
+      <div class="container">
+        <h2>Наши инженерные решения</h2>
+
+        <div class="grid">
+          <article class="card">
+            <img src="images/work1.png" class="zoomable" alt="Контроллер полива">
+            <h3>Контроллер полива</h3>
+            <p>Автоматическое управление насосами и датчиками влажности почвы.</p>
+          </article>
+
+          <article class="card">
+            <img src="images/work2.png" class="zoomable" alt="Мониторинг параметров">
+            <h3>Мониторинг параметров</h3>
+            <p>Контроль температуры, влажности и удалённый доступ через Wi-Fi.</p>
+          </article>
+
+          <article class="card">
+            <img src="images/work3.png" class="zoomable" alt="Контроль гроубокса">
+            <h3>Контроль гроубокса</h3>
+            <p>Освещение, вентиляция и климат-контроль для стабильной среды.</p>
+          </article>
+
+          <article class="card">
+            <img src="images/work4.png" class="zoomable" alt="Панель управления ESP32">
+            <h3>Панель управления ESP32</h3>
+            <p>Сенсорный интерфейс для локального управления системой.</p>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <section class="cta">
+      <div class="container">
+        <h2>Обсудить проект</h2>
+        <p>
+          Если вам нужна система автоматизации для теплицы, гроубокса или
+          хозяйства — свяжитесь со мной.
+        </p>
+
+        <a class="button whatsapp-button" href="https://wa.me/77056460412" target="_blank" rel="noopener noreferrer">
+          Написать в WhatsApp
+        </a>
+      </div>
+    </section>
+  </main>
+
+  <footer>
+    <p>© MN-Engineering</p>
+  </footer>
+
+  <div id="lightbox" class="lightbox" aria-hidden="true">
+    <button id="close" class="lightbox-close" aria-label="Закрыть изображение">&times;</button>
+    <img id="lightbox-img" src="" alt="Увеличенное изображение">
+  </div>
+
+</body>
+</html>

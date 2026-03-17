@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <title>Проекты | Автоматизация теплицы ESP32 и контроллеры полива | MN-Engineering</title>
+  <meta name="description" content="Проекты MN-Engineering: автоматизация теплицы ESP32, контроллеры полива, мониторинг объектов, локальные панели управления и системы для гроубоксов.">
+  <meta name="keywords" content="проекты автоматизация теплицы, ESP32 проекты, контроллер полива Казахстан, система управления гроубоксом, мониторинг теплицы">
+  <meta name="robots" content="index, follow">
+  <link rel="canonical" href="https://mn-engineering.kz/projects.html">
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+
+  <link rel="stylesheet" href="assets/main.css">
+  <script src="js/script.js" defer></script>
+</head>
+<body>
+
+  <header class="site-header">
+    <div class="nav-container">
+      <a href="index.html" class="logo" aria-label="MN-Engineering — главная">
+        <img src="images/logo.png" alt="MN-Engineering" class="logo-img">
+      </a>
+
+      <button class="burger" id="burger" aria-label="Открыть меню" aria-expanded="false" aria-controls="nav-menu">
+        <span></span>
+        <span></span>
+        <span></span>
+      </button>
+
+      <nav class="nav-menu" id="nav-menu">
+        <a href="index.html">Главная</a>
+        <a href="services.html">Услуги</a>
+        <a href="projects.html" class="active">Проекты</a>
+        <a href="contact.html">Контакты</a>
+        <a class="btn-whatsapp" href="https://wa.me/77056460412" target="_blank" rel="noopener noreferrer">WhatsApp</a>
+      </nav>
+    </div>
+  </header>
+
+  <main>
+    <section class="page-hero">
+      <div class="container">
+        <div class="eyebrow">Проекты</div>
+        <h1>Проекты автоматизации и инженерные решения</h1>
+        <p class="hero-text">
+          Галерея направлений, по которым можно реализовать автоматизацию теплицы ESP32,
+          контроллеры полива, мониторинг и систему управления гроубоксом.
+        </p>
+      </div>
+    </section>
+
+    <section class="gallery-section">
+      <div class="container">
+        <div class="gallery-grid">
+          <article class="project-card">
+            <img src="images/work1.png" class="zoomable" alt="Контроллер полива для теплицы">
+            <div class="project-card-body">
+              <div class="project-tag">Irrigation</div>
+              <h3>Контроллер полива для теплицы</h3>
+              <p>Управление насосами, клапанами, защитой и сценариями автоматического полива.</p>
+            </div>
+          </article>
+
+          <article class="project-card">
+            <img src="images/work2.png" class="zoomable" alt="Wi-Fi мониторинг инженерной системы">
+            <div class="project-card-body">
+              <div class="project-tag">Monitoring</div>
+              <h3>Wi-Fi мониторинг инженерной системы</h3>
+              <p>Отображение температуры, влажности, состояния узлов и удалённый контроль объекта.</p>
+            </div>
+          </article>
+
+          <article class="project-card">
+            <img src="images/work3.png" class="zoomable" alt="Система управления гроубоксом на ESP32">
+            <div class="project-card-body">
+              <div class="project-tag">Growbox</div>
+              <h3>Система управления гроубоксом на ESP32</h3>
+              <p>Освещение, климат, вытяжка, вентиляция и повторяемость условий в закрытой среде.</p>
+            </div>
+          </article>
+
+          <article class="project-card">
+            <img src="images/work4.png" class="zoomable" alt="Сенсорная панель управления ESP32">
+            <div class="project-card-body">
+              <div class="project-tag">Panel</div>
+              <h3>Сенсорная панель управления ESP32</h3>
+              <p>Локальный интерфейс настройки, индикации, диагностики и управления инженерной системой.</p>
+            </div>
+          </article>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <div class="container footer-inner">
+      <div>
+        <strong>MN-Engineering</strong><br>
+        Инженерные системы автоматизации
+      </div>
+      <div class="footer-contact">
+        <a href="index.html">Главная</a>
+        <a href="services.html">Услуги</a>
+        <a href="contact.html">Контакты</a>
+      </div>
+    </div>
+  </footer>
+
+  <div id="lightbox" class="lightbox" aria-hidden="true">
+    <button id="close" class="lightbox-close" aria-label="Закрыть изображение">&times;</button>
+    <button id="lightbox-prev" class="lightbox-nav lightbox-prev" aria-label="Предыдущее изображение">&#10094;</button>
+    <img id="lightbox-img" src="" alt="Увеличенное изображение">
+    <button id="lightbox-next" class="lightbox-nav lightbox-next" aria-label="Следующее изображение">&#10095;</button>
+  </div>
+
+</body>
+</html>

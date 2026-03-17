@@ -1,0 +1,348 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <title>MN-Engineering | Автоматизация теплицы ESP32, контроллеры полива и системы управления</title>
+  <meta name="description" content="MN-Engineering — инженерные системы автоматизации теплиц, гроубоксов и полива на базе ESP32. Контроллеры полива, климат-контроль, мониторинг, локальные панели управления.">
+  <meta name="keywords" content="автоматизация теплицы ESP32, контроллер полива Казахстан, система управления гроубоксом, автоматизация полива, климат-контроль теплицы, ESP32 полив, мониторинг теплицы, инженерные системы Казахстан">
+  <meta name="robots" content="index, follow">
+  <meta name="author" content="MN-Engineering">
+  <meta name="theme-color" content="#07111f">
+
+  <link rel="canonical" href="https://mn-engineering.kz/">
+
+  <meta property="og:type" content="website">
+  <meta property="og:title" content="MN-Engineering | Автоматизация теплиц, полива и гроубоксов">
+  <meta property="og:description" content="Инженерные системы на базе ESP32: автоматизация теплицы, контроллеры полива, климат-контроль, мониторинг и панели управления.">
+  <meta property="og:url" content="https://mn-engineering.kz/">
+  <meta property="og:site_name" content="MN-Engineering">
+  <meta property="og:locale" content="ru_RU">
+  <meta property="og:image" content="https://mn-engineering.kz/images/logo.png">
+
+  <meta name="twitter:card" content="summary_large_image">
+  <meta name="twitter:title" content="MN-Engineering | Автоматизация теплиц, полива и гроубоксов">
+  <meta name="twitter:description" content="Контроллеры ESP32, автоматизация полива, климат-контроль и мониторинг для теплиц и гроубоксов.">
+  <meta name="twitter:image" content="https://mn-engineering.kz/images/logo.png">
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+
+  <link rel="stylesheet" href="assets/main.css">
+  <script src="js/script.js" defer></script>
+
+  <script type="application/ld+json">
+  {
+    "@context":"https://schema.org",
+    "@type":"Organization",
+    "name":"MN-Engineering",
+    "url":"https://mn-engineering.kz/",
+    "logo":"https://mn-engineering.kz/images/logo.png",
+    "telephone":"+77056460412",
+    "description":"Инженерные системы автоматизации полива, климат-контроля и мониторинга на базе ESP32 для теплиц, гроубоксов и частных объектов.",
+    "areaServed":"KZ"
+  }
+  </script>
+
+  <script type="application/ld+json">
+  {
+    "@context":"https://schema.org",
+    "@type":"WebSite",
+    "name":"MN-Engineering",
+    "url":"https://mn-engineering.kz/"
+  }
+  </script>
+
+  <script type="application/ld+json">
+  {
+    "@context":"https://schema.org",
+    "@type":"Service",
+    "name":"Автоматизация теплиц, полива и гроубоксов",
+    "provider":{
+      "@type":"Organization",
+      "name":"MN-Engineering"
+    },
+    "areaServed":"Kazakhstan",
+    "serviceType":"Автоматизация полива, климат-контроль, мониторинг, панели управления на базе ESP32"
+  }
+  </script>
+</head>
+<body>
+
+  <header class="site-header">
+    <div class="nav-container">
+      <a href="index.html" class="logo" aria-label="MN-Engineering — главная">
+        <img src="images/logo.png" alt="MN-Engineering" class="logo-img">
+      </a>
+
+      <button class="burger" id="burger" aria-label="Открыть меню" aria-expanded="false" aria-controls="nav-menu">
+        <span></span>
+        <span></span>
+        <span></span>
+      </button>
+
+      <nav class="nav-menu" id="nav-menu">
+        <a href="index.html" class="active">Главная</a>
+        <a href="services.html">Услуги</a>
+        <a href="projects.html">Проекты</a>
+        <a href="contact.html">Контакты</a>
+        <a class="btn-whatsapp" href="https://wa.me/77056460412" target="_blank" rel="noopener noreferrer">WhatsApp</a>
+      </nav>
+    </div>
+  </header>
+
+  <main>
+    <section class="hero-tech">
+      <div class="container hero-tech-grid">
+        <div class="hero-copy">
+          <div class="eyebrow">Инженерные решения на базе ESP32</div>
+          <h1>Автоматизация теплицы, полива и гроубокса под реальные задачи</h1>
+          <p class="hero-text">
+            Разработка контроллеров полива, систем климат-контроля, мониторинга и локальных панелей управления.
+            Проектирование инженерной логики для теплиц, гроубоксов и частных объектов в Казахстане.
+          </p>
+
+          <div class="hero-actions">
+            <a class="button whatsapp-button" href="https://wa.me/77056460412" target="_blank" rel="noopener noreferrer">Обсудить проект</a>
+            <a class="button secondary-button" href="projects.html">Смотреть проекты</a>
+          </div>
+
+          <div class="hero-tags">
+            <span>ESP32</span>
+            <span>Wi-Fi мониторинг</span>
+            <span>Контроллеры полива</span>
+            <span>Климат-контроль</span>
+          </div>
+        </div>
+
+        <div class="hero-visual">
+          <div class="hero-visual-card">
+            <div class="hero-metrics">
+              <div class="metric-card">
+                <div class="metric-label">Температура</div>
+                <div class="metric-value">24.6°C</div>
+              </div>
+              <div class="metric-card">
+                <div class="metric-label">Влажность</div>
+                <div class="metric-value">68%</div>
+              </div>
+              <div class="metric-card">
+                <div class="metric-label">Полив</div>
+                <div class="metric-value">AUTO</div>
+              </div>
+              <div class="metric-card">
+                <div class="metric-label">Wi-Fi</div>
+                <div class="metric-value">ONLINE</div>
+              </div>
+            </div>
+
+            <div class="hero-linechart">
+              <div class="chart-title">Мониторинг системы</div>
+              <svg viewBox="0 0 500 180" class="chart-svg" aria-hidden="true">
+                <polyline points="10,140 70,130 120,118 170,120 230,90 290,95 350,60 420,75 490,35"></polyline>
+              </svg>
+            </div>
+
+            <div class="hero-panel-mini">
+              <div>Полив: <strong>Насос 1</strong></div>
+              <div>Вентиляция: <strong>Активна</strong></div>
+              <div>Освещение: <strong>Таймер</strong></div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="info-strip">
+      <div class="container info-strip-grid">
+        <div class="info-box">
+          <h3>Автоматизация теплицы</h3>
+          <p>Контроль полива, температуры, влажности, вентиляции и удалённый мониторинг объекта.</p>
+        </div>
+        <div class="info-box">
+          <h3>Контроллер полива</h3>
+          <p>Насосы, клапаны, расписание, датчики и логика работы на базе ESP32.</p>
+        </div>
+        <div class="info-box">
+          <h3>Система управления гроубоксом</h3>
+          <p>Освещение, вытяжка, климат и локальная панель для стабильной среды выращивания.</p>
+        </div>
+      </div>
+    </section>
+
+    <section class="advantages-section">
+      <div class="container">
+        <div class="section-heading">
+          <div class="eyebrow">Подход</div>
+          <h2>Технологический подход вместо шаблонных коробок</h2>
+          <p class="section-text">
+            Каждый проект проектируется под оборудование, объект и режим эксплуатации. Это не набор случайных модулей,
+            а согласованная инженерная система управления.
+          </p>
+        </div>
+
+        <div class="grid">
+          <article class="card">
+            <h3>Индивидуальная архитектура</h3>
+            <p>Подбор датчиков, силовых узлов, интерфейсов и сценариев работы под вашу конфигурацию.</p>
+          </article>
+
+          <article class="card">
+            <h3>Локальный и удалённый доступ</h3>
+            <p>Панель управления на месте и мониторинг параметров через Wi-Fi в одном проекте.</p>
+          </article>
+
+          <article class="card">
+            <h3>Ориентация на эксплуатацию</h3>
+            <p>Учитываются питание, монтаж, защита, устойчивость схемы и удобство ежедневного использования.</p>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <section class="gallery-section">
+      <div class="container">
+        <div class="section-heading">
+          <div class="eyebrow">Проекты</div>
+          <h2>Интерактивная галерея решений</h2>
+          <p class="section-text">
+            Примеры инженерных направлений: автоматизация теплицы ESP32, контроллер полива, мониторинг параметров и система управления гроубоксом.
+          </p>
+        </div>
+
+        <div class="gallery-grid">
+          <article class="project-card">
+            <img src="images/work1.png" class="zoomable" alt="Контроллер автоматического полива">
+            <div class="project-card-body">
+              <div class="project-tag">Полив</div>
+              <h3>Контроллер автоматического полива</h3>
+              <p>Насосы, клапаны, сценарии работы и логика включения по условиям среды.</p>
+            </div>
+          </article>
+
+          <article class="project-card">
+            <img src="images/work2.png" class="zoomable" alt="Мониторинг системы теплицы">
+            <div class="project-card-body">
+              <div class="project-tag">Мониторинг</div>
+              <h3>Система мониторинга теплицы</h3>
+              <p>Удалённый контроль температуры, влажности и состояния оборудования по Wi-Fi.</p>
+            </div>
+          </article>
+
+          <article class="project-card">
+            <img src="images/work3.png" class="zoomable" alt="Система управления гроубоксом">
+            <div class="project-card-body">
+              <div class="project-tag">Growbox</div>
+              <h3>Система управления гроубоксом</h3>
+              <p>Контроль освещения, вытяжки, вентиляции и климата в закрытой системе выращивания.</p>
+            </div>
+          </article>
+
+          <article class="project-card">
+            <img src="images/work4.png" class="zoomable" alt="Панель управления на базе ESP32">
+            <div class="project-card-body">
+              <div class="project-tag">ESP32</div>
+              <h3>Локальная панель управления</h3>
+              <p>Сенсорный интерфейс для настройки режимов, индикации и контроля инженерной системы.</p>
+            </div>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <section class="seo-article-section">
+      <div class="container">
+        <div class="section-heading">
+          <div class="eyebrow">SEO</div>
+          <h2>Автоматизация теплицы ESP32, контроллер полива Казахстан, система управления гроубоксом</h2>
+          <p class="section-text">
+            Этот раздел усиливает индексацию сайта по профильным инженерным запросам и одновременно объясняет,
+            какие задачи решают системы MN-Engineering.
+          </p>
+        </div>
+
+        <article class="seo-article">
+          <h2>Инженерные системы автоматизации для теплиц, полива и гроубоксов</h2>
+
+          <p>
+            MN-Engineering разрабатывает инженерные системы автоматизации теплицы ESP32, контроллеры полива для объектов в Казахстане,
+            а также системы управления гроубоксом с мониторингом параметров и локальными интерфейсами. Основная цель таких решений —
+            перевести управление поливом, вентиляцией, температурой, влажностью и освещением из ручного режима в логически
+            организованную систему.
+          </p>
+
+          <p>
+            Когда речь идёт о теплице, гроубоксе или частном инженерном объекте, ручной режим быстро становится ограничением.
+            Пользователь вынужден постоянно контролировать полив, наблюдать за температурой, помнить про график освещения
+            и реагировать на изменения среды. Автоматизация снимает эту нагрузку и повышает повторяемость режимов.
+          </p>
+
+          <h3>Автоматизация теплицы ESP32</h3>
+          <p>
+            Автоматизация теплицы на базе ESP32 позволяет объединить управление поливом, вентиляцией, контролем температуры,
+            мониторингом влажности и логикой работы оборудования в одном проекте. Это особенно полезно там, где нужно
+            удерживать среду в стабильном диапазоне и видеть текущее состояние системы локально или удалённо.
+          </p>
+
+          <h3>Контроллер полива Казахстан</h3>
+          <p>
+            Контроллер полива — один из ключевых узлов современной системы. Он управляет насосами, клапанами,
+            расписанием и сценариями включения. В инженерной реализации важно не просто включать воду по таймеру,
+            а учитывать реальные условия объекта, показания датчиков, уровень воды и защитные режимы.
+          </p>
+
+          <h3>Система управления гроубоксом</h3>
+          <p>
+            В гроубоксе особенно важны температура, влажность, вытяжка, освещение и повторяемость условий.
+            Система управления гроубоксом на базе ESP32 позволяет объединить все эти параметры в единую логику
+            и сделать объект более стабильным и предсказуемым.
+          </p>
+
+          <p class="seo-note">
+            Ключевые запросы: автоматизация теплицы ESP32, контроллер полива Казахстан, система управления гроубоксом,
+            автоматизация полива, климат-контроль теплицы, мониторинг теплицы, ESP32 контроллер.
+          </p>
+        </article>
+      </div>
+    </section>
+
+    <section class="cta">
+      <div class="container">
+        <div class="cta-card">
+          <h2>Нужна инженерная система под ваш объект?</h2>
+          <p>
+            Можно обсудить теплицу, контроллер полива, мониторинг параметров, систему управления гроубоксом
+            и подобрать архитектуру под реальные условия эксплуатации.
+          </p>
+          <a class="button whatsapp-button" href="https://wa.me/77056460412" target="_blank" rel="noopener noreferrer">Написать в WhatsApp</a>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <div class="container footer-inner">
+      <div>
+        <strong>MN-Engineering</strong><br>
+        Инженерные системы автоматизации
+      </div>
+      <div class="footer-contact">
+        <a href="services.html">Услуги</a>
+        <a href="projects.html">Проекты</a>
+        <a href="contact.html">Контакты</a>
+        <a href="automation-esp32.html">ESP32</a>
+      </div>
+    </div>
+  </footer>
+
+  <div id="lightbox" class="lightbox" aria-hidden="true">
+    <button id="close" class="lightbox-close" aria-label="Закрыть изображение">&times;</button>
+    <button id="lightbox-prev" class="lightbox-nav lightbox-prev" aria-label="Предыдущее изображение">&#10094;</button>
+    <img id="lightbox-img" src="" alt="Увеличенное изображение">
+    <button id="lightbox-next" class="lightbox-nav lightbox-next" aria-label="Следующее изображение">&#10095;</button>
+  </div>
+
+</body>
+</html>
